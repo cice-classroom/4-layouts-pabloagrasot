@@ -1,0 +1,32 @@
+:root {
+  --base: 0.25rem;
+  --body-width: 50rem;
+  --s-width: calc(var(--base) * 2);
+  --m-width: calc(var(--base) * 4);
+  --l-width: calc(var(--base) * 8);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 5%;
+  flex: 1;
+}
+
+.wrapper__navbar {
+  flex: 2;
+  max-width: var(--base);
+}
+
+.wrapper__navbar input,
+button {
+  border-radius: 9999px;
+}
