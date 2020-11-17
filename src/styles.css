@@ -1,9 +1,14 @@
 :root {
   --base: 0.25rem;
-  --body-width: 50rem;
+  --body-width: 30rem;
   --s-width: calc(var(--base) * 2);
   --m-width: calc(var(--base) * 4);
   --l-width: calc(var(--base) * 8);
+}
+
+:root {
+  --shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2)
+  
 }
 
 html,
@@ -14,6 +19,7 @@ body {
 .header {
   display: flex;
   align-items: center;
+  box-shadow: var(--shadow);
 }
 
 .logo {
@@ -23,7 +29,10 @@ body {
 
 .wrapper__navbar {
   flex: 2;
-  max-width: var(--base);
+  max-width: var(--body-width);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .wrapper__navbar input,
