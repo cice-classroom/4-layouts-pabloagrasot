@@ -6,7 +6,7 @@
     --l-width: calc(var(--base) * 8);
 
 
-    --primary-color: rgba(41, 126, 203, 1);
+    --primary-color: rgba(55, 135, 203, 1);
     --bk-color:  rgba(237, 237, 237, 1);
 
     --shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2);
