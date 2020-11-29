@@ -34,7 +34,11 @@ h1 {
   color: var(--primary-color);
 }
 
-h2 {font-size: 2.441rem;}
+h2 {
+  font-size: 2.441rem;
+  color: var(--primary-color);
+  text-align: center;
+}
 
 h3 {font-size: 1.953rem;}
 
@@ -84,45 +88,87 @@ small{
 
 .content__title{
   text-align: center;
-  margin: var(--m-width) auto;
+  margin: var(--l-width) auto;
 }
 
-
-.grey_section{
+.grey__section{
   background-color: var(--bk-color);
 }
 .img_section{
   max-width: var(--body-width);
-  margin: 0 auto;
+  margin: var(--l-width) auto;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns:  200px 200px 200px 200px 200px 200px;
   column-gap: var(--m-width);
-  row-gap: var(--m-width);
+  row-gap: var(--s-width);
 }
 
 .grid__text1{
   grid-row: 2 / 3;
   grid-column: 3 / 4;
-  color: var(--primary-color)
+  color: var(--primary-color);
+  margin:0
 }
 
 .grid__text2{
   grid-row: 2 / 3;
   grid-column: 5 / 6;
   color: var(--primary-color);
+  margin:0
 }
 
-.img_section_girasoles{
+.img_section_k2{
   grid-row: 1 / 2;
-  grid-column: 1 / 4;
+  grid-column: 5 / 7;
 }
-.img_section_coco{
+.img_section_kanchenjunga{
   grid-row: 2 / 3;
   grid-column: 1 / 2;
 }
 
-.img_section_almendras{
+.img_section_makalu{
   grid-row: 3 / 4;
   grid-column: 1 / 2;
 }
+
+.img_section_lhotse{
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+}
+
+
+.img_section_cho-oyu{
+  grid-row: 2 / 4;
+  grid-column: 2 / 3;
+}
+
+.img_section_everest{
+  grid-row: 1 / 3;
+  grid-column: 4 / 5;
+}
+
+.img_section_annapurna{
+  grid-row: 2 / 3;
+  grid-column: 6 / 7;
+}
+
+.img_section_dhaulagiri{
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+}
+.img_section_manaslu{
+  grid-row: 3 / 4;
+  grid-column: 4 / 5;
+}
+
+.img_section_nanga_parbat{
+  grid-row: 3 / 4;
+  grid-column: 5 / 6;
+}
+
+.img_section_nanga_gasherbrum{
+  grid-row: 3 / 4;
+  grid-column: 6 / 7;
+}
+
