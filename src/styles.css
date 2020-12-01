@@ -99,6 +99,22 @@ small{
   margin: var(--l-width) auto;
 }
 
+
+.carousel{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carousel > div{
+  flex:1;
+  text-align: center;
+}
+
+.carousel > div > img{
+  width: 80%;
+}
+ 
 .grey__section{
   background-color: var(--bk-color);
   padding: var(--s-width) 0;
@@ -107,8 +123,8 @@ small{
   max-width: var(--body-width);
   margin: var(--l-width) auto;
   display: grid;
-  grid-template-rows: 200px 200px 200px;
-  grid-template-columns:  200px 200px 200px 200px 200px 200px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns:  repeat(6, 1fr);
   column-gap: var(--m-width);
   row-gap: var(--s-width);
   
