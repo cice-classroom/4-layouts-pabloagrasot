@@ -1,0 +1,316 @@
+
+*{
+  box-sizing: border-box; 
+ }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html{
+  font-size: 112.5%; /*18px*/
+}
+
+body{
+  font-family: var(--body-font);
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(--body-font);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 2.441rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+a{
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+small{
+  font-size: 0.8rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  box-shadow: var(--shadow);
+  
+}
+
+.navbar__logo {
+  max-width: 6%;
+  /* flex: 1; */
+  padding: 0.5rem;
+  
+}
+
+.navbar__search {
+  flex: 2;
+  max-width: var(--body-width);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.navbar__search input,
+.button {
+  border: 0.2rem solid var(--primary-color);
+  border-radius: 9999px;
+  padding: var(--s-width) var(--m-width);
+  border-color: var(--primary-color);
+  background-color: transparent ;
+  font-family: var(--body-font), var(--icon-font) ;
+}
+
+.button{
+  cursor: pointer;
+}
+
+.button:hover{
+  color: var(--w-color);
+  background-color: var(--primary-color);
+}
+
+.content__title{
+  text-align: center;
+  margin: var(--l-width) auto;
+}
+
+
+.carousel{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carousel > div{
+  flex:1;
+  text-align: center;
+}
+
+.carousel > div > img{
+  width: 80%;
+}
+ 
+.grey__section{
+  background-color: var(--bk-color);
+  padding: var(--s-width) 0;
+}
+.img_section{
+  max-width: var(--body-width);
+  margin: var(--l-width) auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns:  repeat(6, 1fr);
+  column-gap: var(--m-width);
+  row-gap: var(--s-width);
+  
+}
+
+.grid__text1{
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  color: var(--primary-color);
+  margin:0
+}
+
+.grid__text2{
+  grid-row: 2 / 3;
+  grid-column: 5 / 6;
+  color: var(--primary-color);
+  margin:0
+}
+
+.img_section_k2{
+  grid-row: 1 / 2;
+  grid-column: 5 / 7;
+}
+.img_section_kanchenjunga{
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.img_section_makalu{
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+.img_section_lhotse{
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+}
+
+
+.img_section_cho-oyu{
+  grid-row: 2 / 4;
+  grid-column: 2 / 3;
+}
+
+.img_section_everest{
+  grid-row: 1 / 3;
+  grid-column: 4 / 5;
+}
+
+.img_section_annapurna{
+  grid-row: 2 / 3;
+  grid-column: 6 / 7;
+}
+
+.img_section_dhaulagiri{
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+}
+.img_section_manaslu{
+  grid-row: 3 / 4;
+  grid-column: 4 / 5;
+}
+
+.img_section_nanga_parbat{
+  grid-row: 3 / 4;
+  grid-column: 5 / 6;
+}
+
+.img_section_nanga_gasherbrum{
+  grid-row: 3 / 4;
+  grid-column: 6 / 7;
+}
+
+.section{
+  max-width: var(--body-width);
+  margin: var(--l-width) auto;
+}
+
+.data-flex_l{
+  display: flex;
+  align-items: center;
+  margin: var(--l-width) auto;
+}
+
+.data-flex_l > aside{
+  margin-left: var(--m-width);
+  text-align: left;
+  max-width: 65%;
+}
+
+.data-flex_l > aside > h3{
+  margin: auto;
+}
+
+.data-flex_r{
+  display: flex;
+  align-items: center;   
+  margin: var(--l-width) auto;
+  justify-content: flex-end;
+}
+
+.data-flex_r > aside{
+  text-align: right;
+  max-width: 65%;
+  margin-right: var(--m-width);
+  
+}
+
+.data-flex_r > aside > h3{
+  margin: auto;
+}
+
+
+.img-flex__aside{
+  margin: var(--l-width) auto;
+  display: flex;
+  justify-content:space-around;
+}
+
+.last__section{
+  padding: 0 var(--xl-width);
+  display: flex;
+  flex-direction: column;
+}
+
+.button-cta{
+  border: 0.2rem solid var(--primary-color);
+  border-radius: 9999px;
+  padding: var(--s-width) var(--m-width);
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  font-family: var(--body-font), var(--icon-font) ;
+  font-size: 1.5rem ;
+  color: var(--w-color);
+  cursor: pointer;
+  margin: 0 auto;
+
+}
+
+.button-cta:hover{
+  background-color: var(--w-color);
+  color: var(--primary-color);
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer > h3 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.footer-links{
+  display: flex ;
+  flex-direction: column;
+  text-align: right;
+}
+
+.footer-list{
+display: flex;
+font-size: 0.8rem;
+justify-content: space-between;
+align-items: flex-end;
+}
+
+.footer-list > ul:not(:last-child){
+  margin: 0 var(--s-width);
+  }
+
+  .sub-footer{
+    background-color: var(--primary-color);
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: var(--s-width) var(--m-width);
+  }
+
+  .sub-footer > p{
+    flex: 2;
+  }
+
+  .sub-footer__links{
+    display: flex;
+    justify-content: space-around;
+    flex:1;
+
+  }
